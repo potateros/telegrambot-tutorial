@@ -1,0 +1,22 @@
+{
+  "name": "telegrambot-nodejs-tutorial",
+  "version": "1.0.0",
+  "description": "Tutorial to create a Telegram bot using nodejs and node-telegram-bot-api, and deploy to Azure using App Services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potateros/telegrambot-nodejs-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/potateros/telegrambot-nodejs-tutorial/issues"
+  },
+  "homepage": "https://github.com/potateros/telegrambot-nodejs-tutorial#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.30.0"
+  }
+}
