@@ -20,7 +20,7 @@ bot.on('message', msg => {
 
   // version 3 - thank you first_name
   if (message.includes('happy birthday') || message.includes('happy bday')) {
-    if (msg.from.username === 'undefined') {
+    if (msg.from.username !== 'undefined') {
       bot.sendMessage(chatId, 'thank you @' + msg.from.username + '!');
     } else {
       bot.sendMessage(chatId, 'thank you ' + msg.from.first_name + '!');
