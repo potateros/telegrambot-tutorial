@@ -13,8 +13,8 @@ fs.readdir(dir, (err, files) => {
 });
 
 // Generate random number
-function randCat(numOfPhotos) {
-  return Math.floor(Math.random() * numOfPhotos) + 1;
+function randCat(inputNum) {
+  return Math.floor(Math.random() * inputNum) + 1;
 }
 
 // Receiving command
@@ -28,7 +28,7 @@ bot.onText(/\/cat/g, (msg, match) => {
   bot.sendPhoto(chatId, stream, {
     caption: 'cat.'
   });
-  /* Advanced version
+  /* zAdvanced version
   bot.sendPhoto(chatId, `./catphotos/${randCat(numOfPhotos)}.jpg`, {
     caption: 'cat.'
   });

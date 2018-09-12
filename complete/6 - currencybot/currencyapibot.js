@@ -16,18 +16,21 @@ bot.onText(/\/usd/g, (msg, match) => {
   } else {
     inputNum = parseInt(splitCommand[1]);
   }
-  console.log(inputNum);
   var url =
     'https://free.currencyconverterapi.com/api/v6/convert?q=MYR_USD&compact=ultra';
   request(url, function(error, response, body) {
     var parseBody = JSON.parse(body);
+    console.log(parseBody);
     var rate = parseFloat(parseBody['MYR_USD']);
     if (inputNum === 1) {
       bot.sendMessage(chatId, '1MYR = ' + rate + 'USD');
     } else {
-      console.log(inputNum);
       var total = inputNum * rate;
       bot.sendMessage(chatId, inputNum + 'MYR = ' + total + 'USD');
     }
   });
 });
+
+var car = {
+  brand: 'toyota'
+};

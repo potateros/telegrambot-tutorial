@@ -8,10 +8,14 @@ bot.on('message', msg => {
   var chatId = msg.chat.id;
   var message = msg.text.toString().toLowerCase();
 
+  console.log(msg);
+
   // version 1 - basic
   if (message.includes('happy birthday') || message.includes('happy bday')) {
     bot.sendMessage(chatId, 'thank you!');
   }
+
+  // show them json here
 
   // version 2 - thank you
   if (message.includes('happy birthday') || message.includes('happy bday')) {
@@ -20,22 +24,22 @@ bot.on('message', msg => {
 
   // version 3 - thank you first_name
   if (message.includes('happy birthday') || message.includes('happy bday')) {
-    if (msg.from.username !== 'undefined') {
-      bot.sendMessage(chatId, 'thank you @' + msg.from.username + '!');
-    } else {
+    if (msg.from.username === 'undefined') {
       bot.sendMessage(chatId, 'thank you ' + msg.from.first_name + '!');
+    } else {
+      bot.sendMessage(chatId, 'thank you @' + msg.from.username + '!');
     }
   }
 
   // version 4 - ternary
-  if (message.includes('happy birthday') || message.includes('happy bday')) {
-    bot.sendMessage(
-      chatId,
-      `thank you @${
-        msg.from.username === 'undefined'
-          ? msg.from.first_name
-          : msg.from.username
-      }`
-    );
-  }
+  // if (message.includes('happy birthday') || message.includes('happy bday')) {
+  //   bot.sendMessage(
+  //     chatId,
+  //     `thank you @${
+  //       msg.from.username === 'undefined'
+  //         ? msg.from.first_name
+  //         : msg.from.username
+  //     }`
+  //   );
+  // }
 });

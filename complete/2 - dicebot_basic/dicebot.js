@@ -17,14 +17,15 @@ bot.on('message', msg => {
 
   /////////////////////////////////////
   // version 2 - ES6 syntax
-  if (message.includes('roll')) {
-    bot.sendMessage(chatId, `${dice(6).toString()}`);
-  }
+  // if (message.includes('roll')) {
+  //   bot.sendMessage(chatId, `${dice(6).toString()}`);
+  // }
 
   ////////////////////////////////////
   // version 3 - / operator
   bot.onText(/\/roll/g, (msg, match) => {
-    bot.sendMessage(chatId, `${dice(6).toString()}`);
+    var diceRoll = dice(6).toString();
+    bot.sendMessage(chatId, diceRoll);
   });
 });
 
@@ -32,17 +33,20 @@ bot.on('message', msg => {
 //version 4 - more types of die
 bot.onText(/\/roll6/g, (msg, match) => {
   var chatId = msg.chat.id;
-  bot.sendMessage(chatId, `${dice(6).toString()}`);
+  var diceRoll = dice(6).toString();
+  bot.sendMessage(chatId, diceRoll);
 });
 
 bot.onText(/\/roll12/g, (msg, match) => {
   var chatId = msg.chat.id;
-  bot.sendMessage(chatId, `${dice(6).toString()}`);
+  var diceRoll = dice(12).toString();
+  bot.sendMessage(chatId, diceRoll);
 });
 
 bot.onText(/\/roll20/g, (msg, match) => {
   var chatId = msg.chat.id;
-  bot.sendMessage(chatId, `${dice(20).toString()}`);
+  var diceRoll = dice(20).toString();
+  bot.sendMessage(chatId, diceRoll);
 });
 
 //////////////////////////////////////
@@ -51,8 +55,8 @@ bot.onText(/\/roll/g, (msg, match) => {
   var chatId = msg.chat.id;
   var splitCommand = match.input.split(' ');
   var diceNum = splitCommand[1];
-
-  bot.sendMessage(chatId, `${dice(diceNum).toString()}`);
+  var diceRoll = dice(diceNum).toString();
+  bot.sendMessage(chatId, diceRoll);
 });
 
 //////////////////////////////////////
@@ -61,19 +65,24 @@ bot.onText(/\/roll/g, (msg, match) => {
   var chatId = msg.chat.id;
   var splitCommand = match.input.split(' ');
   var diceNum = splitCommand[1];
+  var diceRoll = dice(diceNum).toString();
 
   if (diceNum === undefined) {
-    bot.sendMessage(chatId, `${dice(6)}`);
+    diceNum = '6';
+    bot.sendMessage(chatId, diceRoll);
   } else {
-    bot.sendMessage(chatId, `${dice(diceNum)}`);
+    bot.sendMessage(chatId, diceRoll);
   }
 });
 
-///////////////////////////////////////////////////////////////////
-//dice function
+/**
+ * dice function
+ **/
 function dice(sides) {
   return Math.floor(Math.random() * sides) + 1;
 }
 
-//fat arrow (advanced?)
-var dicefunc = sides => Math.floor(Math.random() * sides) + 1;
+/**
+ * fat arrow (advanced?)
+ * var dicefunc = sides => Math.floor(Math.random() * sides) + 1;
+ **/

@@ -4,25 +4,22 @@ const token = tokenerer.tokener();
 const TelegramBot = require('node-telegram-bot-api');
 const bot = new TelegramBot(token, { polling: true });
 
-const fs = require('fs');
-const dir = './complete/3 - catbot/catphotos/';
+const request = require('request');
 
-var numOfPhotos;
-fs.readdir(dir, (err, files) => {
-  numOfPhotos = files.length;
+var chatId = 4994094;
+
+bot.on('message', msg => {
+  var message = msg.text.toString().toLowerCase();
+
+  console.log(msg);
+  bot.sendMessage(chatId, 'this for tony');
+
+  chatId = msg.chat.id;
 });
 
-function randCat(numOfPhotos) {
-  return Math.floor(Math.random() * numOfPhotos) + 1;
-}
+// bot.on('message', msg => {
+//   var message = msg.text.toString().toLowerCase();
 
-bot.onText(/\/cat/g, (msg, match) => {
-  var chatId = msg.chat.id;
-  bot.sendPhoto(
-    chatId,
-    `./complete/3 - catbot/catphotos/${randCat(numOfPhotos)}.jpg`,
-    {
-      caption: 'cat.'
-    }
-  );
-});
+//   console.log(msg);
+//   bot.sendMessage(chatId, 'this for eric');
+// });
