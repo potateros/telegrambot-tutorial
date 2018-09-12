@@ -29,6 +29,38 @@
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
 
+	<style type="text/css">
+		/* 1. Style header/footer <div> so they are positioned as desired. */
+		#header-left {
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			padding: 2%;
+			font-size: 0.5em;
+		}
+
+		#header-right {
+			position: absolute;
+			top: 0%;
+			right: 0%;
+			padding: 2%;
+			font-size: 0.5em;
+		}
+
+		#footer-left {
+			position: absolute;
+			bottom: 0%;
+			left: 0%;
+			padding: 2%;
+			font-size: 0.5em;
+		}
+
+		.snippet {
+			width: 80%;
+
+		}
+	</style>
+
 	<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -41,239 +73,248 @@
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div class="slides">
 			<section>
-				<h3>Hello Freshies!</h3>
+				<h3>Sunway Tech Club</h3>
+				<p>Telegram Bot Workshop</p>
+				<img src='./img/telegram-bot.png' alt='bot-image' width="50%">
 				<br>
-				<p>We are:</p>
-				<img src="img/stclogo.png" style="border: none; width: 60%; margin: 1em; padding: 1em;" />
 			</section>
 
 			<section>
-				<h2>What are we?</h2>
-				<p class="fragment">or better yet....</p>
+				<h2>Reminder!</h2>
+				<p>
+					<ul>
+						<li>Code Editor (<a href="https://code.visualstudio.com/">VSCode</a>)</li>
+						<li>Telegram Account</li>
+						<li><a href="https://desktop.telegram.org/">Telegram Desktop</a></li>
+						<li><a href="https://nodejs.org/en/download/">nodejs</a></li>
+						<li>Inquisitive mind</li>
+					</ul>
+				</p>
 			</section>
 
 			<section>
-				<h2 class="fragment grow">Why are we?</h2>
+				<h2>Join here</h2>
+				<ul>
+					<li><a href="http://bit.ly/join-stctelegram">Join STC Telegram</a></li>
+					<li><a href="http://bit.ly/join-stcslack">Join STC Slack</a></li>
+					<p>or if you have already signed up,</p>
+					<li><a href="https://sunwaytechclub.slack.com">STC Slack</a></li>
+					<p>and join #stc-workshop, where I'll upload code<br> and you can ask questions!</p>
+				</ul>
 			</section>
 
 			<section>
-				<h2 class="fragment" style="position:fixed; top:0; padding-left: 12%;"><code>print(stc.purpose)</code></h2>
-				<p class="fragment" style="padding-top: 2em;">There is a gap between the tech education and the tech industry</p>
-				<p class="fragment"><img src="img/bridge.png" style="width: 60%;"></p>
+				<h2 class="fragment">Ask if you have questions!</h2>
+				<h2 class="fragment">Raise your hand!</h2>
+				<h2 class="fragment">I can be wrong too!</h2>
 			</section>
 
 			<section>
-				<h2 class="fragment" style="position:fixed; top:0; padding-left: 14%;"><code>print(stc.vision)</code></h2>
-				<p class="fragment">Building a community of Sunway students with the aspiration of minimising the disparity between
-					tech education, tech industry, and tech entrepreneurship.</p>
+				<h2>Before we start...</h2>
+				<p class="fragment">Copy and paste code</p>
+				<p class="fragment">Use keyboard shortcuts (Especially Ctrl+C and Ctrl+P!)</p>
 			</section>
 
 			<section>
-				<h2 class="fragment" style="position:fixed; top:0; padding-left: 8%;"><code>print(stc.motivators)</code></h2>
-				<p class="fragment">"No motivation and inspiration"</p>
-				<p class="fragment">"No place to apply what I've learned"</p>
-				<p class="fragment">"There's no community"</p>
-				<p class="fragment">"Struggling in class because of the lack of a good foundation"</p>
-				<p class="fragment">"No confidence in my skills"</p>
-				<p class="fragment">"I have a cool idea but I don't know where to start"</p>
-			</section>
-
-			<section id="fragment">
-				<p class="fragment">So really though...</p>
-				<p class="fragment">What <strong>are</strong> we?</p>
+				<h2>Let's start!</h2>
 			</section>
 
 			<section>
-				<h2 class="fragment">We are:</h2>
-				<p class="fragment">💥 A community</p>
-				<p class="fragment">📚 Tech education</p>
-				<p class="fragment">💼 Tech entrepreneurship</p>
-			</section>
-
-			<section>
-				<h3>💥 A Community</h3>
-				<p class="fragment">We're here to build an open community where we collaboratively learn and hack together.</p>
-			</section>
-
-			<section>
-				<h3>📚 Tech Education</h3>
-				<p class="fragment">We're here to bridge the gap between Tech Education and the Tech Industry</p>
-			</section>
-
-			<section>
-				<h3>💼 Tech Entrepreneurship</h3>
-				<p class="fragment">We're here to build and encourage the technopreneurial culture in the Sunway Tech Community</p>
-			</section>
-
-			<section>
-				<h3>Why join our <strike>cult</strike> club?</h3>
-			</section>
-
-			<section>
-				<h3 class="fragment" style="position:fixed; top:0; padding-left: 13%;"><code>print(stc.past_events[0])</code></h3>
-				<h3 class="fragment" style="padding-top: 1em">AppLaunch</h3>
-				<img src="img/applaunch.jpg" class="fragment" style="width:60%; border: none">
-			</section>
-
-			<section>
-				<h3 class="fragment" style="position:fixed; top:0; padding-left: 13%;"><code>print(stc.past_events[1])</code></h3>
-				<h3 class="fragment" style="padding-top: 1em">Android</h3>
-				<img src="img/android_logo_PNG35.jpg" class="fragment" style="width:60%; border: none">
-			</section>
-
-			<section>
-				<h3 class="fragment" style="position:fixed; top:0; padding-left: 13%;"><code>print(stc.past_events[2])</code></h3>
-				<h3 class="fragment" style="padding-top: 1em">iOS</h3>
-				<img src="img/iosworkshop.jpg" class="fragment" style="width:60%; border: none">
-			</section>
-
-			<section>
-				<h3 class="fragment" style="position:fixed; top:0; padding-left: 13%;"><code>print(stc.past_events[3])</code></h3>
-				<h3 class="fragment" style="padding-top: 1em">CityHack</h3>
-				<img src="img/cityhack.jpg" class="fragment" style="width:60%; border: none">
-			</section>
-
-			<section>
-				<h3 class="fragment" style="position:fixed; top:0; padding-left: 13%;"><code>print(stc.past_events[4])</code></h3>
-				<h3 class="fragment" style="padding-top: 1em">Python Game Workshop</h3>
-				<img src="img/pythonworkshop.jpg" class="fragment" style="width:60%; border: none">
-			</section>
-
-			<section>
-				<h3 class="fragment" style="position:fixed; top:0; padding-left: 13%;"><code>print(stc.past_events[5])</code></h3>
-				<h3 class="fragment" style="padding-top: 1em">Ethereum Workshop</h3>
-				<img src="img/ethworkshop.jpg" class="fragment" style="width:60%; border: none">
-			</section>
-
-			<section>
-				<h3 class="fragment" style="position:fixed; top:0; padding-left: 13%;"><code>print(stc.past_events[6])</code></h3>
-				<h3 class="fragment" style="padding-top: 1em">GitHub</h3>
-				<img src="img/github.jpg" class="fragment" style="width:60%; border: none">
+				<h2>What is a Telegram bot?</h2>
+				<ul>
+					<li class="fragment">great tool for convenience</li>
+					<li class="fragment">playground for learning</li>
+					<li class="fragment">friend...?</li>
+				</ul>
 			</section>
 
 			<section>
 				<section>
-					<h3 class="fragment" style="position:fixed; top:0; padding-left: 13%;"><code>print(stc.past_events[7])</code></h3>
-					<h3 class="fragment" style="padding-top: 1em">Google I/O Extended 2018</h3>
-					<img src="img/ioxkl.jpg" class="fragment" style="width:60%; border: none">
+					<h2>The BotFather</h2>
+					<img src="img/botfather.jpg" width="50%" alt="botfather">
+					<p>@BotFather</p>
+				</section>
+
+				<section>
+					<p><code>/start</code></p>
+					<img src="img/botfather-start.png" width="40%" alt="botfather reply">
+				</section>
+
+				<section>
+					<p><code>/newbot</code></p>
+					<img src="img/botfather-newbot.png" width="80%" alt="botfather name">
+				</section>
+
+				<section>
+					<p>Get your token!</p>
+					<img src="img/botfather-token.png" width="80%" alt="botfather token">
+					<p class="fragment">Remember! Keep it safe</p>
+				</section>
+
+				<section>
+					<h2>Questions?<br>Answers?</h2>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>1</h2>
+					<h2>🎂 Birthday bot 🤖</h2>
+				</section>
+
+				<section>
+					<h2>Basics</h2>
+					<img src="img/1-template.png" class="snippet">
+				</section>
+
+				<section>
+					<h2>Take input!</h2>
+					<img src="img/1-msg.png" class="snippet">
+				</section>
+
+				<section>
+					<h2>Add logic!</h2>
+					<img src="img/1-logic1.png" class="snippet">
+				</section>
+
+				<section>
+					<h2>All together now!</h2>
+					<img src="img/1-together1.png" class="snippet">
+				</section>
+
+				<section>
+					<h2>Run the bot</h2>
+					<img src="img/1-runbot.png" class="snippet">
+				</section>
+
+				<section>
+					<h2>Questions?<br>Answers?</h2>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>2</h2>
+					<h2>🎲 Dice bot 🤖</h2>
+				</section>
+
+				<section>
+					<h2>Questions?<br>Answers?</h2>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>3</h2>
+					<h2>🐱 Cat bot 🤖</h2>
+				</section>
+
+				<section>
+					<h2>Questions?<br>Answers?</h2>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Break!</h2>
 				</section>
 				<section>
-					<h3><code>print(stc.past_events[7])</code></h3>
-					<h3>Google I/O Extended 2018</h3>
-					<img src="img/ioxkl2.jpg" class="fragment" style="width:30%; border: none">
+					<h2>Welcome back</h2>
 				</section>
+			</section>
+
+			<section>
 				<section>
-					<h3><code>print(stc.past_events[7])</code></h3>
-					<h3>Google I/O Extended 2018</h3>
-					<img src="img/ioxkl3.jpg" class="fragment" style="width:60%; border: none">
+					<h2>4</h2>
+					<h2>🎲 Dice bot 🤖 (Advanced)</h2>
 				</section>
+
 				<section>
-					<h3><code>print(stc.past_events[7])</code></h3>
-					<h3>Google I/O Extended 2018</h3>
-					<img src="img/ioxkl5.jpg" class="fragment" style="width:60%; border: none">
+					<h2>Questions?<br>Answers?</h2>
 				</section>
+			</section>
+
+			<section>
 				<section>
-					<h3><code>print(stc.past_events[7])</code></h3>
-					<h3>Google I/O Extended 2018</h3>
-					<img src="img/ioxkl4.jpg" class="fragment" style="width:60%; border: none">
+					<h2>5</h2>
+					<h2>💬 Quote bot 🤖</h2>
+				</section>
+
+				<section>
+					<h2>Questions?<br>Answers?</h2>
 				</section>
 			</section>
 
-			<!--
-	To add new slide, just create a new <section>
-	To add individual animate-in, put class="fragment"
-
-	Just copy the past events sections and change the photos to add the future events
--->
 			<section>
-				<h3 class="fragment" style="position:fixed; top:0; padding-left: 13%;"><code>print(stc.future_events)</code></h3>
-				<p class="fragment" style="padding-bottom:0.5em;">Python workshop for beginners!</p>
-				<p class="fragment" style="padding-bottom:0.5em;">React Native Mobile App @ 8th - 9th September</p>
-				<p class="fragment" style="padding-bottom:0.5em;">Telegram bot w/ Azure & Node.js @ 19th September</p>
-				<p class="fragment" style="padding-bottom:0.5em;">Makerspace opening!</p>
-				<p class="fragment" style="padding-bottom:0.5em;">...and more!</p>
+				<section>
+					<h2>6</h2>
+					<h2>💱 Currency bot 🤖</h2>
+				</section>
+
+				<section>
+					<h2>Questions?<br>Answers?</h2>
+				</section>
 			</section>
 
 			<section>
-				<h3><code>if(student.interest == true)</code></h3>
+				<section>
+					<h2>7</h2>
+					<h2>☁️ Weather bot 🤖</h2>
+				</section>
+
+				<section>
+					<h2>Head over to</h2>
+					<p><a href="https://developer.yahoo.com/weather/" target="_blank" alt="yahoo weather api link">https://developer.yahoo.com/weather</a></p>
+				</section>
+
+				<section>
+					<h2>Questions?<br>Answers?</h2>
+				</section>
 			</section>
 
 			<section>
-				<h3 class="fragment"><code>if(student.joinstc() == true)</code></h3>
-				<p class="fragment"><code>> set_currency(MYR)</code></p>
-				<p class="fragment"><code>> float memberfees = 15</code></p>
-				<br>
-				<p class="fragment"><code>> help(joinstc())</code></p>
-				<p class="fragment"><strong><code>> joinstc() : to join Sunway Tech Club, simply approach the registration counter during any of our events!</code></strong></p>
+				<h2>Keep Learning!</h2>
+				<ul class="hide-bullet">
+					<li class="fragment">🤔 think</li>
+					<li class="fragment">🔍 search</li>
+					<li class="fragment">⁇ ask</li>
+				</ul>
 			</section>
 
 			<section>
-				<p class="fragment"><code>
-						if(student.joinstc() == true) { <br>
-							student.get_goodies();<br>
-						}<br>
-					</code></p>
-				<p class="fragment"><code>> print(student.get_goodies()</code></p>
-				<p class="fragment"><code><strong>> GitHub swag, STC sticker + cheaper/free access to our workshops!</strong></code></p>
-			</section>
-
-
-			<section>
-				<h4><code>> print(stc.slack_info)</code></h4>
-				<p class="fragment"><code><strong>> https://bit.do/stcslack/</strong></code></p>
-				<h4 class="fragment"><code>> print(stc.slack_QR)</code></h4>
-				<img src="img/slackqr.png" style="width: 30%" class="fragment">
-			</section>
-
-			<section>
-				<h4><code>> print(stc.telegram_info)</code></h4>
-				<p class="fragment"><code><strong>> https://bit.do/stctelegram/</strong></code></p>
-				<h4 class="fragment"><code>> print(stc.telegram_QR)</code></h4>
-				<img src="img/telegramqr.png" style="width: 30%" class="fragment">
-			</section>
-
-			<section>
-				<h4><code>> print(stc.contact_info)</code></h4>
-				<p class="fragment"><code><strong>> Email: sunwaytechclub@gmail.com</strong></code></p>
-				<p class="fragment"><code><strong>> Facebook: fb.com/sunwaytechclub/</strong></code></p>
-			</section>
-
-			<section>
-				<h4><code>> print(stc.contact)</code></h4>
-				<img src="img/stclogo.png" style="border: none; width: 25%">
-				<p class="fragment"><code><strong>> https://bit.do/stcslack/</strong></code></p>
-				<p class="fragment"><code><strong>> https://bit.do/stctelegram</strong></code></p>
-				<p class="fragment"><code><strong>> Email: sunwaytechclub@gmail.com/</strong></code></p>
-				<p class="fragment"><code><strong>> Facebook: fb.com/sunwaytechclub/</strong></code></p>
-			</section>
-
-			<section>
-				<h3>PSSSSTT!</h3>
-				<h4 class="fragment"><code>if(student.interest == true && <br> student.commitment == 11 && <br> student.enthusiasm == 11)</code></h4>
-				<p class="fragment"><code><strong>> stc.join_committee()</strong></code></p>
-			</section>
-
-			<section>
-				<h3 class="fragment"><code><strong>> presentation.end() </strong></code></h3>
-				<h3 class="fragment"><code><strong>> return 0 </strong></code></h3>
-			</section>
-
-			<section>
-				<h3 class="fragment">Thank you, and welcome to University life!</h3>
-			</section>
-
-			<section>
-				<h4><code>> print(stc.contact)</code></h4>
-				<img src="img/stclogo.png" style="border: none; width: 25%">
-				<p><code><strong>> https://bit.do/stcslack/</strong></code></p>
-				<p><code><strong>> https://bit.do/stctelegram/</strong></code></p>
-				<p><code><strong>> Email: sunwaytechclub@gmail.com/</strong></code></p>
-				<p><code><strong>> Facebook: fb.com/sunwaytechclub/</strong></code></p>
+				<h2>Feedback Time!</h2>
 			</section>
 
 		</div>
-
 	</div>
+
+	<div id="hidden" style="display:none;">
+		<div id="header">
+			<div id="header-left">
+				<img src="./img/stc-logo-small.png" alt="stc logo" style="width:10%;">
+			</div>
+
+			<div id="header-right" style="padding-top: 3.5%">
+				<span>Telegram Bot Workshop</span>
+			</div>
+
+			<div id="footer-left">
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript">
+		var header = $('#header').html();
+		if (window.location.search.match(/print-pdf/gi)) {
+			Reveal.addEventListener('ready', function (event) {
+				$('.slide-background').append(header);
+			});
+		}
+		else {
+			$('div.reveal').append(header);
+		}
+	</script>
 
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>
