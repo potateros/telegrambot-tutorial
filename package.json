@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/potateros/telegrambot-nodejs-tutorial#readme",
   "dependencies": {
+    "cryptiles": "^4.1.2",
     "node-telegram-bot-api": "^0.30.0",
     "yql": "^1.0.2"
   }
